@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Socio</string>
+    <string name="hint_text">What do you want to talk about?</string>
+    <string name="post">POST</string>
+</resources>
