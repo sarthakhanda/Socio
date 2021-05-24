@@ -20,8 +20,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:src="@drawable/ic_baseline_add_24"
+        android:focusable="true"
+        android:tint="@color/primaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondaryLightColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/secondaryColor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@+id/fab"
+        app:srcCompat="@drawable/ic_baseline_edit" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondaryLightColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/secondaryColor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/fab1"
+        app:layout_constraintEnd_toEndOf="@+id/fab1"
+        app:srcCompat="@drawable/ic_baseline_logout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
